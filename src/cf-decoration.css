@@ -290,7 +290,7 @@ h1, h2, h3, h4, h5, h6,
 /* ---------------------------------- */
 @-webkit-keyframes zoomfromcenter {
 	from {
-		-webkit-transform:scale(0.75);
+		-webkit-transform:scale(0.5);
 	}
 	to {
 		-webkit-transform:scale(1);
@@ -307,7 +307,7 @@ h1, h2, h3, h4, h5, h6,
 /* ---------------------------------- */
 @-webkit-keyframes zoomfromtop {
 	from {
-		-webkit-transform:translate(0%, -25%) scale(0.75);
+		-webkit-transform:translate(0%, -25%) scale(0.5);
 	}
 	to {
 		-webkit-transform:translate(0%, 0%) scale(1);
@@ -323,7 +323,7 @@ h1, h2, h3, h4, h5, h6,
 }
 @-webkit-keyframes zoomfrombottom {
 	from {
-		-webkit-transform:translate(0%, 25%) scale(0.75);
+		-webkit-transform:translate(0%, 25%) scale(0.5);
 	}
 	to {
 		-webkit-transform:translate(0%, 0%) scale(1);
@@ -339,7 +339,7 @@ h1, h2, h3, h4, h5, h6,
 }
 @-webkit-keyframes zoomfromright {
 	from {
-		-webkit-transform:translate(25%, 0%) scale(0.75);
+		-webkit-transform:translate(25%, 0%) scale(0.5);
 	}
 	to {
 		-webkit-transform:translate(0%, 0%) scale(1);
@@ -355,7 +355,7 @@ h1, h2, h3, h4, h5, h6,
 }
 @-webkit-keyframes zoomfromleft {
 	from {
-		-webkit-transform:translate(-25%, 0%) scale(0.75);
+		-webkit-transform:translate(-25%, 0%) scale(0.5);
 	}
 	to {
 		-webkit-transform:translate(0%, 0%) scale(1);
@@ -372,7 +372,7 @@ h1, h2, h3, h4, h5, h6,
 /* ---------------------------------- */
 @-webkit-keyframes zoomfromtopleft {
 	from {
-		-webkit-transform:translate(-25%, -25%) scale(0.75);
+		-webkit-transform:translate(-25%, -25%) scale(0.5);
 	}
 	to {
 		-webkit-transform:translate(0%, 0%) scale(1);
@@ -388,7 +388,7 @@ h1, h2, h3, h4, h5, h6,
 }
 @-webkit-keyframes zoomfromtopright {
 	from {
-		-webkit-transform:translate(25%, -25%) scale(0.75);
+		-webkit-transform:translate(25%, -25%) scale(0.5);
 	}
 	to {
 		-webkit-transform:translate(0%, 0%) scale(1);
@@ -404,7 +404,7 @@ h1, h2, h3, h4, h5, h6,
 }
 @-webkit-keyframes zoomfrombottomleft {
 	from {
-		-webkit-transform:translate(-25%, 25%) scale(0.75);
+		-webkit-transform:translate(-25%, 25%) scale(0.5);
 	}
 	to {
 		-webkit-transform:translate(0%, 0%) scale(1);
@@ -420,7 +420,7 @@ h1, h2, h3, h4, h5, h6,
 }
 @-webkit-keyframes zoomfrombottomright {
 	from {
-		-webkit-transform:translate(25%, 25%) scale(0.75);
+		-webkit-transform:translate(25%, 25%) scale(0.5);
 	}
 	to {
 		-webkit-transform:translate(0%, 0%) scale(1);
@@ -432,6 +432,234 @@ h1, h2, h3, h4, h5, h6,
 	}
 	to {
 		transform:translate(0%, 0%) scale(1);
+	}
+}
+/* ---------------------------------- */
+.shift-fromcenter,
+.hover-shift-fromcenter:hover,
+.active-shift-fromcenter:active,
+.active-shift-fromcenter.active,
+.focus-shift-fromcenter:focus {
+	-webkit-animation:shiftfromcenter 0.6s;
+	animation:shiftfromcenter 0.6s;
+}
+.shift-fromtop,
+.hover-shift-fromtop:hover,
+.active-shift-fromtop:active,
+.active-shift-fromtop.active,
+.focus-shift-fromtop:focus {
+	-webkit-animation:shiftfromtop 0.6s;
+	animation:shiftfromtop 0.6s;
+}
+.shift-frombottom,
+.hover-shift-frombottom:hover,
+.active-shift-frombottom:active,
+.active-shift-frombottom.active,
+.focus-shift-frombottom:focus {
+	-webkit-animation:shiftfrombottom 0.6s;
+	animation:shiftfrombottom 0.6s;
+}
+.shift-fromright,
+.hover-shift-fromright:hover,
+.active-shift-fromright:active,
+.active-shift-fromright.active,
+.focus-shift-fromright:focus {
+	-webkit-animation:shiftfromright 0.6s;
+	animation:shiftfromright 0.6s;
+}
+.shift-fromleft,
+.hover-shift-fromleft:hover,
+.active-shift-fromleft:active,
+.active-shift-fromleft.active,
+.focus-shift-fromleft:focus {
+	-webkit-animation:shiftfromleft 0.6s;
+	animation:shiftfromleft 0.6s;
+}
+.shift-fromtopleft,
+.hover-shift-fromtopleft:hover,
+.active-shift-fromtopleft:active,
+.active-shift-fromtopleft.active,
+.focus-shift-fromtopleft:focus {
+	-webkit-animation:shiftfromtopleft 0.6s;
+	animation:shiftfromtopleft 0.6s;
+}
+.shift-fromtopright,
+.hover-shift-fromtopright:hover,
+.active-shift-fromtopright:active,
+.active-shift-fromtopright.active,
+.focus-shift-fromtopright:focus {
+	-webkit-animation:shiftfromtopright 0.6s;
+	animation:shiftfromtopright 0.6s;
+}
+.shift-frombottomleft,
+.hover-shift-frombottomleft:hover,
+.active-shift-frombottomleft:active,
+.active-shift-frombottomleft.active,
+.focus-shift-frombottomleft:focus {
+	-webkit-animation:shiftfrombottomleft 0.6s;
+	animation:shiftfrombottomleft 0.6s;
+}
+.shift-frombottomright,
+.hover-shift-frombottomright:hover,
+.active-shift-frombottomright:active,
+.active-shift-frombottomright.active,
+.focus-shift-frombottomright:focus {
+	-webkit-animation:shiftfrombottomright 0.6s;
+	animation:shiftfrombottomright 0.6s;
+}
+.shift-none,
+.hover-shift-none:hover,
+.active-shift-none:active,
+.active-shift-none.active,
+.focus-shift-none:focus {
+	-webkit-animation:none;
+	animation:none;
+}
+/* ---------------------------------- */
+@-webkit-keyframes shiftfromcenter {
+	from {
+		-webkit-transform:scale(0.90);
+	}
+	to {
+		-webkit-transform:scale(1);
+	}
+}
+@keyframes shiftfromcenter {
+	from {
+		transform:scale(0.90);
+	}
+	to {
+		transform:scale(1);
+	}
+}
+/* ---------------------------------- */
+@-webkit-keyframes shiftfromtop {
+	from {
+		-webkit-transform:translate(0px, -25px);
+	}
+	to {
+		-webkit-transform:translate(0px, 0px);
+	}
+}
+@keyframes shiftfromtop {
+	from {
+		transform:translate(0px, -25px);
+	}
+	to {
+		transform:translate(0px, 0px);
+	}
+}
+@-webkit-keyframes shiftfrombottom {
+	from {
+		-webkit-transform:translate(0px, 25px);
+	}
+	to {
+		-webkit-transform:translate(0px, 0px);
+	}
+}
+@keyframes shiftfrombottom {
+	from {
+		transform:translate(0px, 25px);
+	}
+	to {
+		transform:translate(0px, 0px);
+	}
+}
+@-webkit-keyframes shiftfromright {
+	from {
+		-webkit-transform:translate(25px, 0px);
+	}
+	to {
+		-webkit-transform:translate(0px, 0px);
+	}
+}
+@keyframes shiftfromright {
+	from {
+		transform:translate(25px, 0px);
+	}
+	to {
+		transform:translate(0px, 0px);
+	}
+}
+@-webkit-keyframes shiftfromleft {
+	from {
+		-webkit-transform:translate(-25px, 0px);
+	}
+	to {
+		-webkit-transform:translate(0px, 0px);
+	}
+}
+@keyframes shiftfromleft {
+	from {
+		transform:translate(-25px, 0px);
+	}
+	to {
+		transform:translate(0px, 0px);
+	}
+}
+/* ---------------------------------- */
+@-webkit-keyframes shiftfromtopleft {
+	from {
+		-webkit-transform:translate(-25px, -25px);
+	}
+	to {
+		-webkit-transform:translate(0px, 0px);
+	}
+}
+@keyframes shiftfromtopleft {
+	from {
+		transform:translate(-25px, -25px);
+	}
+	to {
+		transform:translate(0px, 0px);
+	}
+}
+@-webkit-keyframes shiftfromtopright {
+	from {
+		-webkit-transform:translate(25px, -25px);
+	}
+	to {
+		-webkit-transform:translate(0px, 0px);
+	}
+}
+@keyframes shiftfromtopright {
+	from {
+		transform:translate(25px, -25px);
+	}
+	to {
+		transform:translate(0px, 0px);
+	}
+}
+@-webkit-keyframes shiftfrombottomleft {
+	from {
+		-webkit-transform:translate(-25px, 25px);
+	}
+	to {
+		-webkit-transform:translate(0px, 0px);
+	}
+}
+@keyframes shiftfrombottomleft {
+	from {
+		transform:translate(-25px, 25px);
+	}
+	to {
+		transform:translate(0px, 0px);
+	}
+}
+@-webkit-keyframes shiftfrombottomright {
+	from {
+		-webkit-transform:translate(25px, 25px);
+	}
+	to {
+		-webkit-transform:translate(0px, 0px);
+	}
+}
+@keyframes shiftfrombottomright {
+	from {
+		transform:translate(25px, 25px);
+	}
+	to {
+		transform:translate(0px, 0px);
 	}
 }
 /* ---------------------------------- */
